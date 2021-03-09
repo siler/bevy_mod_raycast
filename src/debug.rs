@@ -37,7 +37,7 @@ impl<T> Default for DebugCursorMesh<T> {
 
 /// Updates the 3d cursor to be in the pointed world coordinates
 pub fn update_debug_cursor<T: 'static + Send + Sync>(
-    commands: &mut Commands,
+    mut commands: Commands,
     state: Res<PluginState<T>>,
     mut meshes: ResMut<Assets<Mesh>>,
     mut materials: ResMut<Assets<StandardMaterial>>,
