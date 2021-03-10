@@ -12,7 +12,7 @@ pub enum RaycastAlgorithm {
 
 impl Default for RaycastAlgorithm {
     fn default() -> Self {
-        RaycastAlgorithm::MollerTrumbore(Backfaces::Cull)
+        RaycastAlgorithm::Geometric
     }
 }
 
