@@ -363,7 +363,7 @@ fn ray_mesh_intersection(
             for i in 0..3 {
                 let vertex_index = index[i] as usize;
                 world_vertices[i] =
-                    mesh_to_world.transform_point3(Vec3::from(vertex_positions[vertex_index]));
+                    mesh_to_world.project_point3(Vec3::from(vertex_positions[vertex_index]));
             }
             // If all vertices in the triangle are further away than the nearest hit, skip
             if world_vertices
