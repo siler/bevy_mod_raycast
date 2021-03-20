@@ -14,8 +14,8 @@ categories = ["game-engines", "rendering"]
 bevy = { git = "https://github.com/siler/bevy", branch = "main", default-features = false, features = ["render"] }
 
 [features]
-ex = [ "bevy/bevy_wgpu", "bevy/bevy_winit", "bevy/bevy_gltf", "bevy/x11" ]
+ex = ["bevy/bevy_wgpu", "bevy/bevy_winit", "bevy/bevy_gltf", "bevy/x11"]
 
 [[example]]
 name = "mouse_picking"
-required-features = [ "ex" ]
+required-features = ["ex"]
